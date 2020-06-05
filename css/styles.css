@@ -7,6 +7,9 @@
   шрифт в лого: "Raleway", sans-serif;
   размер шрифта заголовка: 36px;
   размер основного текста: 14px;
+  основной цвет фона: #FFFFFF;
+  дополнительный цвет фона: #F5F4FA;
+  цвет фона футера: #2F303A;
   */
 :root {
   --accent-color: #2196f3;
@@ -17,10 +20,18 @@
   --logo-font-family: "Raleway", sans-serif;
   --title-font-size: 36px;
   --text-font-size: 14px;
+  --primary-bg-color: #ffffff;
+  --seckond-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--primary-bg-color);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
 }
 ul {
   list-style: none;
@@ -200,6 +211,9 @@ header .logo-black {
 
 /* TEAM */
 
+.team {
+  background-color: var(--seckond-bg-color);
+}
 .team h2 {
   font-family: var(--font-family);
   font-style: normal;
