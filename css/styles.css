@@ -1,0 +1,351 @@
+:root {
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --light-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+  --title-font-size: 36px;
+  --text-font-size: 14px;
+}
+
+body {
+  font-family: var(--font-family);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEDDER */
+
+header .logo-blue {
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+header .logo-black {
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.site-nav a {
+  font-family: var(--font-family);
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.address-header a {
+  font-family: var(--font-family);
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.address-header a:hover,
+.address-header a:focus {
+  color: var(--accent-color);
+}
+
+/* MAIN */
+/* HERO */
+.hero h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+}
+.hero a {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+}
+
+/* ADVANTAGES */
+.advantages h2 {
+  font-family: var(--font-family);
+  visibility: hidden;
+  font-size: 0;
+}
+.advantages h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.advantag p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-font-size);
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* DIRECTIONS */
+
+.directions h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--title-font-size);
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.directions h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+/* TEAM */
+
+.team h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--title-font-size);
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.team a {
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+.team a:hover,
+.team a:focus {
+  color: var(--accent-color);
+}
+
+/* CUSTOMERS */
+
+.customers h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--title-font-size);
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* PORTFOLIO */
+
+.sorting-nav a {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.sorting-nav a:hover,
+.sorting-nav a:focus {
+  color: var(--light-color);
+}
+.portfolio h1 {
+  font-family: var(--font-family);
+  visibility: hidden;
+  font-size: 0;
+}
+.portfolio p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+}
+.portfolio h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: var(--title-font-size);
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio b {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* FOOTER */
+
+footer > .logo-blue {
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--accent-color);
+}
+footer > .logo-black {
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--light-color);
+}
+.address-footer {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-font-size);
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+}
+.social b {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.social a {
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+.social a:hover,
+.social a:focus {
+  color: var(--accent-color);
+}
+.subscribe b {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-font-size);
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.subscribe [type="text"] {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 187% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.subscribe [type="submit"] {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+}
+footer p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
