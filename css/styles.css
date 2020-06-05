@@ -1,3 +1,13 @@
+/*  
+  акцентный цвет: #2196f3;
+  цвет заголовка: #212121;
+  цвет текста: #757575;
+  светлый цвет тескта: #ffffff;
+  основной шрифт: "Roboto", sans-serif;
+  шрифт в лого: "Raleway", sans-serif;
+  размер шрифта заголовка: 36px;
+  размер основного текста: 14px;
+  */
 :root {
   --accent-color: #2196f3;
   --title-color: #212121;
@@ -20,7 +30,44 @@ a {
 }
 
 /* HEDDER */
+/*
+header {
+  position: absolute;
+  width: 1600px;
+  height: 81px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
 
+.logo {
+  position: absolute;
+  width: 153px;
+  height: 31px;
+  margin-left: 215px;
+  margin-top: 24px;
+}
+
+.address-header > .e-mail {
+  position: absolute;
+  width: 161px;
+  height: 16px;
+  margin-left: 1052px;
+  margin-top: 32px;
+}
+.address-header > .phone {
+  position: absolute;
+  width: 142px;
+  height: 16px;
+  margin-left: 1243px;
+  margin-top: 32px;
+}
+header > nav {
+  position: absolute;
+  width: 294px;
+  height: 48px;
+  margin-left: 453px;
+  margin-top: 32px;
+}*/
 header .logo-blue {
   font-family: var(--logo-font-family);
   font-style: normal;
@@ -41,7 +88,7 @@ header .logo-black {
   color: #000000;
 }
 
-.site-nav a {
+.site-nav .link {
   font-family: var(--font-family);
   list-style-type: none;
   font-style: normal;
@@ -51,8 +98,11 @@ header .logo-black {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
   color: var(--accent-color);
 }
 .address-header a {
