@@ -24,7 +24,19 @@
   --seckond-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
 }
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  outline: 2px solid tomato;
+}
 body {
   font-family: var(--font-family);
   background-color: var(--primary-bg-color);
@@ -33,9 +45,11 @@ body {
 footer {
   background-color: var(--footer-bg-color);
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
