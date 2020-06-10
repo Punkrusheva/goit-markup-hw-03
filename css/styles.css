@@ -38,12 +38,8 @@ html {
   outline: 2px solid tomato;
 }
 body {
-  font-family: var(--font-family);
+  margin: 0px;
   background-color: var(--primary-bg-color);
-}
-
-footer {
-  background-color: var(--footer-bg-color);
 }
 
 ul {
@@ -55,7 +51,7 @@ a {
 }
 
 /* HEDDER */
-/*
+
 header {
   position: absolute;
   width: 1600px;
@@ -64,35 +60,13 @@ header {
   margin-top: 0px;
 }
 
-.logo {
+header .logo {
   position: absolute;
   width: 153px;
   height: 31px;
   margin-left: 215px;
   margin-top: 24px;
 }
-
-.address-header > .e-mail {
-  position: absolute;
-  width: 161px;
-  height: 16px;
-  margin-left: 1052px;
-  margin-top: 32px;
-}
-.address-header > .phone {
-  position: absolute;
-  width: 142px;
-  height: 16px;
-  margin-left: 1243px;
-  margin-top: 32px;
-}
-header > nav {
-  position: absolute;
-  width: 294px;
-  height: 48px;
-  margin-left: 453px;
-  margin-top: 32px;
-}*/
 header .logo-blue {
   font-family: var(--logo-font-family);
   font-style: normal;
@@ -113,6 +87,28 @@ header .logo-black {
   color: #000000;
 }
 
+header nav {
+  position: absolute;
+  width: 294px;
+  height: 48px;
+  margin-left: 453px;
+  margin-top: 32px;
+  padding: 0px;
+}
+header ul {
+  padding: 0px;
+  margin: 0px;
+}
+header li {
+  display: inline-block;
+}
+header li:nth-child(2) {
+  margin: 0px 46px 32px 46px;
+}
+header li:nth-child(2n + 1) {
+  margin: 0px 0px 32px;
+}
+
 .site-nav .link {
   font-family: var(--font-family);
   list-style-type: none;
@@ -130,6 +126,7 @@ header .logo-black {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .address-header a {
   font-family: var(--font-family);
   list-style-type: none;
@@ -144,10 +141,38 @@ header .logo-black {
 .address-header a:focus {
   color: var(--accent-color);
 }
-
+.address-header .e-mail {
+  display: inline-block;
+  position: absolute;
+  width: 161px;
+  height: 16px;
+  margin-left: 1052px;
+  margin-top: 32px;
+}
+.address-header .phone {
+  display: inline-block;
+  position: absolute;
+  width: 142px;
+  height: 16px;
+  margin-left: 1243px;
+  margin-top: 32px;
+}
 /* MAIN */
+
 /* HERO */
+.hero {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  margin-left: 0px;
+  margin-top: 80px;
+}
 .hero h1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  margin-left: 452px;
+  margin-top: 280px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 900;
@@ -159,7 +184,15 @@ header .logo-black {
   text-transform: uppercase;
   color: var(--light-color);
 }
-.hero a {
+.hero .box {
+  position: absolute;
+  margin-left: 732px;
+  margin-top: 440px;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -169,17 +202,39 @@ header .logo-black {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
+  /*по макету 0.06, но тогда в две строки*/
   color: var(--light-color);
 }
 
 /* ADVANTAGES */
+.advantages {
+  position: absolute;
+  width: 1170px;
+  height: 251px;
+  margin-left: 215px;
+  margin-top: 774px;
+  margin-right: auto;
+  padding: 0px;
+}
+.advantages ul {
+  padding: 0px;
+  position: absolute;
+  width: 270px;
+  height: 251px;
+  margin: 0px;
+}
+.advantages li {
+  display: inline-block;
+  margin-right: 30px;
+}
 .advantages h2 {
   font-family: var(--font-family);
   visibility: hidden;
   font-size: 0;
 }
 .advantages .title {
+  margin: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -190,6 +245,7 @@ header .logo-black {
   color: var(--title-color);
 }
 .advantages .text {
+  margin: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -199,9 +255,19 @@ header .logo-black {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+.advantages > li {
+  position: absolute;
+  width: 270px;
+  height: 251px;
+}
 /* DIRECTIONS */
-
+.directions {
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  margin-left: 215px;
+  margin-top: 1119px;
+}
 .directions h2 {
   font-family: var(--font-family);
   font-style: normal;
@@ -227,6 +293,11 @@ header .logo-black {
 /* TEAM */
 
 .team {
+  position: absolute;
+  width: 1600px;
+  height: 702px;
+  margin-left: 0px;
+  margin-top: 1599px;
   background-color: var(--seckond-bg-color);
 }
 .team h2 {
@@ -262,16 +333,26 @@ header .logo-black {
   color: var(--text-color);
 }
 .team a {
+  display: inline-block;
+  padding: 1px 1px;
+  border-radius: 10px;
   font-family: var(--font-family);
   color: var(--text-color);
 }
 .team a:hover,
 .team a:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--light-color);
 }
 
 /* CUSTOMERS */
-
+.customers {
+  position: absolute;
+  width: 1170px;
+  height: 182px;
+  margin-left: 215px;
+  margin-top: 2395px;
+}
 .customers h2 {
   font-family: var(--font-family);
   font-style: normal;
@@ -284,8 +365,34 @@ header .logo-black {
 }
 
 /* PORTFOLIO */
+.portfolio {
+  position: absolute;
+  width: 1170px;
+  height: 1360px;
+  margin-left: 215px;
+  margin-top: 174px;
+}
+.portfolio-info,
+.portfolio-info ul {
+  padding-left: 0px;
+  width: 370px;
+  height: 404px;
+  margin-left: 215px;
+  margin-top: 262px;
+}
 
-.sorting-nav a {
+.portfolio-sorting ul {
+  display: inline-block;
+  position: absolute;
+  width: 611px;
+  height: 54px;
+  padding: 0px;
+  margin: 0px;
+}
+.portfolio-sorting a {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -296,16 +403,39 @@ header .logo-black {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.sorting-nav a:hover,
-.sorting-nav a:focus {
+.portfolio-sorting a:hover,
+.portfolio-sorting a:focus {
+  display: inline-block;
+  padding: 6px 22px;
+  background-color: var(--accent-color);
   color: var(--light-color);
 }
-.portfolio h1 {
+
+.portfolio-sorting li {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px, 8px, 16px;
+}
+.portfolio-sorting li:first-child {
+  margin-right: 8px;
+}
+.portfolio-sorting li:last-child {
+  margin-left: 8px;
+}
+
+.portfolio-info {
+  margin-top: 34px;
+}
+.portfolio-info ul {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.portfolio-inf h1 {
   font-family: var(--font-family);
   visibility: hidden;
   font-size: 0;
 }
-.portfolio p {
+.portfolio-info p {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -315,7 +445,7 @@ header .logo-black {
   letter-spacing: 0.03em;
   color: var(--light-color);
 }
-.portfolio h2 {
+.portfolio-info h2 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -325,7 +455,7 @@ header .logo-black {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-.portfolio b {
+.portfolio-info b {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -337,8 +467,24 @@ header .logo-black {
 }
 
 /* FOOTER */
-
-footer > .logo-blue {
+.footer {
+  position: absolute;
+  width: 1600px;
+  height: 253px;
+  margin-left: 0px;
+  margin-top: 1628px;
+  margin-right: auto;
+  background-color: var(--footer-bg-color);
+}
+.footer .logo {
+  position: absolute;
+  width: 153px;
+  height: 31px;
+  padding: 0px;
+  margin-left: 214px;
+  margin-top: 1673px;
+}
+.footer .logo-blue {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -346,7 +492,7 @@ footer > .logo-blue {
   line-height: 26px;
   color: var(--accent-color);
 }
-footer > .logo-black {
+.footer .logo-black {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -380,12 +526,17 @@ footer > .logo-black {
   color: var(--light-color);
 }
 .social a {
+  display: inline-block;
+  padding: 1px 1px;
+  border-radius: 10px;
   font-family: var(--font-family);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--light-color);
 }
 .social a:hover,
 .social a:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--light-color);
 }
 .subscribe b {
   font-family: var(--font-family);
@@ -410,6 +561,11 @@ footer > .logo-black {
   color: var(--text-color);
 }
 .subscribe [type="submit"] {
+  display: inline-block;
+  padding: 10px 62px 10px 29px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 900;
