@@ -46,40 +46,32 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* HEDDER */
-
-header {
-  outline: 2px solid tomato;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 81px;
+.container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
-header .site-nav {
-  padding: 0px;
-  margin: 0px;
+/* HEDDER */
+.page-header .container {
+  height: 80px;
 }
-header li {
-  display: inline-block;
+.page-header {
+  display: flex;
+  background-color: lime;
 }
-header li:nth-child(2) {
-  margin: 0px 46px 32px 46px;
-}
-header li:nth-child(2n + 1) {
-  margin: 0px 0px 32px;
-}
-header .logo {
+/* LOGO */
+.page-header .logo {
   position: absolute;
   width: 153px;
   height: 31px;
-  margin-left: 30px;
-  margin-top: 24px;
+  margin-left: 0px;
+  padding-top: 24px;
 }
-header .logo-blue {
+.page-header .logo-blue {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -89,7 +81,7 @@ header .logo-blue {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-header .logo-black {
+.page-header .logo-black {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -98,17 +90,26 @@ header .logo-black {
   letter-spacing: 0.03em;
   color: #000000;
 }
-
-header nav {
+/*
+.site-nav,
+.address-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  outline: 2px solid tomato;
+}*/
+.page-header .site-nav {
+  outline: 2px solid tomato;
   position: absolute;
   width: 294px;
   height: 48px;
   margin-left: 215px;
-  margin-top: 35px;
+  margin-top: 32px;
   padding: 0px;
 }
-
-.site-nav .link {
+.page-header .site-nav {
+  display: flex;
+  width: 294px;
+  height: 48px;
   font-family: var(--font-family);
   list-style-type: none;
   font-style: normal;
@@ -118,6 +119,13 @@ header nav {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+.site-nav li {
+  outline: 2px solid tomato;
+  margin-right: 50px;
+}
+.site-nav li:last-child {
+  margin-right: 0px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -126,7 +134,24 @@ header nav {
   color: var(--accent-color);
 }
 
-.address-header a {
+.address-header {
+  outline: 2px solid tomato;
+  padding: 0px;
+  margin-left: 843px;
+  margin-top: 32px;
+  width: 333px;
+  height: 16px;
+  display: flex;
+}
+.address-header li,
+.address-header ul {
+  margin-right: 30px;
+}
+.address-header li:last-child {
+  margin-right: 0px;
+}
+.address-header .e-mail,
+.address-header .phone {
   font-family: var(--font-family);
   list-style-type: none;
   font-style: normal;
@@ -140,40 +165,26 @@ header nav {
 .address-header a:focus {
   color: var(--accent-color);
 }
-.address-header .e-mail {
-  display: inline-block;
-  position: absolute;
-  width: 161px;
-  height: 16px;
-  margin-left: 867px;
-  margin-top: 32px;
-}
-.address-header .phone {
-  display: inline-block;
-  position: absolute;
-  width: 142px;
-  height: 16px;
-  margin-left: 1058px;
-  margin-top: 32px;
-}
 /* MAIN */
-
 /* HERO */
-.hero {
-  position: absolute;
+
+.hero .container {
+  outline: 2px solid tomato;
+  padding-top: 200px;
+  margin-bottom: 94px;
+  text-align: center;
   width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
   height: 600px;
-  margin-left: 0px;
-  margin-top: 80px;
 }
 .hero h1 {
-  position: absolute;
+  background-color: lime;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
   width: 696px;
   height: 120px;
-  margin-left: 252px;
-  margin-top: 280px;
+
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 900;
@@ -187,8 +198,10 @@ header nav {
 }
 .hero .box {
   position: absolute;
+  margin-top: 30px;
   margin-left: 500px;
-  margin-top: 430px;
+  margin-bottom: 294px;
+  /*margin-top: 430px;*/
   padding: 10px 32px;
   background-color: var(--accent-color);
   width: 200px;
@@ -209,49 +222,38 @@ header nav {
 }
 
 /* ADVANTAGES */
-.advantages {
-  position: absolute;
+
+.advantages .container {
   width: 1170px;
   height: 251px;
-  margin-left: 15px;
-  margin-top: 774px;
-  margin-right: auto;
   padding: 0px;
+  margin-bottom: 94px;
 }
 .advantages ul {
-  display: inline-block;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding: 0px;
-  position: absolute;
-  width: 270px;
-  height: 251px;
-  margin: 0px;
 }
+
 .advantages li {
-  display: inline-block;
-  position: absolute;
-  width: 270px;
-  height: 251px;
+  outline: 2px solid tomato;
   padding: 0px;
   margin-right: 30px;
-}
-.advantages li {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px, 30px, 0px;
-}
-.advantages li:first-child {
-  margin-right: 30px;
+  width: 270px;
+  height: 251px;
 }
 .advantages li:last-child {
-  margin-left: 30px;
+  margin-right: 0px;
 }
-.advantages h2 {
-  font-family: var(--font-family);
+.advantages .hidden {
   visibility: hidden;
   font-size: 0;
 }
 .advantages .title {
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -262,7 +264,8 @@ header nav {
   color: var(--title-color);
 }
 .advantages .text {
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -273,14 +276,23 @@ header nav {
   color: var(--text-color);
 }
 /* DIRECTIONS */
-.directions {
-  position: absolute;
+
+.directions .container {
   width: 1170px;
   height: 386px;
-  margin-left: 15px;
-  margin-top: 1119px;
+  margin-bottom: 94px;
+  padding: 0px;
 }
-.directions h2 {
+
+.directions .big-title {
+  outline: 2px solid tomato;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 377px; /* в макете 336px*/
+  height: 42px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -290,7 +302,12 @@ header nav {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.directions h3 {
+.directions .title {
+  width: 370px;
+  height: 70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -300,21 +317,46 @@ header nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
+.directions ul {
+  display: flex;
+  padding: 0px;
+  width: 370px;
+  height: 294px;
+}
+.directions li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.directions li:last-child {
+  margin-right: 0px;
+}
 /* TEAM */
 
-.team {
-  position: absolute;
+.team .container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding-top: 94px;
   width: 1230px;
+  height: 702px;
   padding-left: 15px;
   padding-right: 15px;
-  height: 702px;
-  margin-left: 0px;
-  margin-top: 1599px;
+  outline: 2px solid tomato;
+}
+.team {
   background-color: var(--seckond-bg-color);
+  margin-bottom: 94px;
 }
 .team h2 {
+  outline: 2px solid tomato;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 265px; /*по  макету 264px*/
+  height: 42px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -324,7 +366,17 @@ header nav {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+/*
+.team .img {
+  padding: 0px;
+}*/
 .team h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 157px;
+  height: 19px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -336,6 +388,11 @@ header nav {
   color: var(--title-color);
 }
 .team p {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px auto 16px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -347,6 +404,9 @@ header nav {
   color: var(--text-color);
 }
 .team a {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 16px 32px 24px;
   display: inline-block;
   padding: 1px 1px;
   border-radius: 10px;
@@ -358,16 +418,43 @@ header nav {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
+.team ul {
+  display: flex;
+  padding: 0px;
+}
+
+.team .team-list {
+  width: 270px;
+  height: 422px;
+  margin-right: 30px;
+  padding-left: 0px;
+}
+.team-list:last-child {
+  margin-right: 0px;
+}
+.team .soc-cont {
+  display: inline-block;
+  font-size: 15px;
+}
 
 /* CUSTOMERS */
-.customers {
-  position: absolute;
-  width: 1170px;
+.customers .container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding: 0px;
+  width: 1200px;
   height: 182px;
-  margin-left: 15px;
-  margin-top: 2395px;
+  outline: 2px solid tomato;
 }
 .customers h2 {
+  outline: 2px solid tomato;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 391px; /*в макете 390px*/
+  height: 42px;
+  padding: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -377,27 +464,44 @@ header nav {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.customers ul {
+  display: flex;
+  padding: 0px;
+}
+.customers li {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+  width: 170px;
+  height: 90px;
+}
 
 /* PORTFOLIO */
-.portfolio {
-  position: absolute;
-  width: 1170px;
+.portfolio .container {
+  outline: 2px solid tomato;
+  width: 1200px;
   height: 1360px;
-  margin-left: 15px;
-  margin-top: 174px;
+  margin-top: 93px;
 }
+
 .portfolio-info,
 .portfolio-info ul {
   padding-left: 0px;
   width: 370px;
   height: 404px;
-  margin-left: 15px;
-  margin-top: 262px;
 }
 
+.portfolio-sorting {
+  margin-left: auto;
+  margin-right: auto;
+  width: 611px;
+  height: 54px;
+  outline: 2px solid tomato;
+}
 .portfolio-sorting ul {
-  display: inline-block;
-  position: absolute;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 34px;
   width: 611px;
   height: 54px;
   padding: 0px;
@@ -431,25 +535,37 @@ header nav {
   margin: 0px, 8px, 16px;
 }
 .portfolio-sorting li:first-child {
-  margin-right: 8px;
+  margin-right: auto;
 }
 .portfolio-sorting li:last-child {
   margin-left: 8px;
 }
 
 .portfolio-info {
+  outline: 2px solid tomato;
   margin-top: 34px;
 }
 .portfolio-info ul {
+  display: flex;
   padding-left: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
-.portfolio-inf h1 {
-  font-family: var(--font-family);
+.portfolio-info li {
+  margin-right: 30px;
+}
+.portfolio-infoli:last-child {
+  margin-right: 0px;
+}
+.portfolio-info h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   visibility: hidden;
   font-size: 0;
 }
-.portfolio-info p {
+.portfolio-info .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -458,8 +574,11 @@ header nav {
   /* or 156% */
   letter-spacing: 0.03em;
   color: var(--light-color);
+  background-color: lime;
 }
-.portfolio-info h2 {
+.portfolio-info .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -469,7 +588,9 @@ header nav {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-.portfolio-info b {
+.portfolio-info .category {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -481,26 +602,32 @@ header nav {
 }
 
 /* FOOTER */
-.footer {
-  position: absolute;
+.footer .container {
+  outline: 2px solid tomato;
   width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
   height: 253px;
-  margin-left: 0px;
-  margin-top: 1628px;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-top: 45px;
+  margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
+}
+.footer {
   background-color: var(--footer-bg-color);
 }
-.footer .logo {
-  position: absolute;
+.logo-footer {
+  outline: 2px solid tomato;
+  display: inline-block;
   width: 153px;
   height: 31px;
-  padding: 0px;
+  padding-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 8px; /*
   margin-left: 14px;
-  margin-top: 1673px;
+  margin-top: 1673px;*/
 }
-.footer .logo-blue {
+.logo-footer .logo-blue {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -508,7 +635,7 @@ header nav {
   line-height: 26px;
   color: var(--accent-color);
 }
-.footer .logo-black {
+.logo-footer .logo-black {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -518,6 +645,12 @@ header nav {
 }
 
 .address-footer {
+  outline: 2px solid tomato;
+  margin-right: 0px;
+  margin-top: 8px;
+  outline: 2px solid tomato;
+  width: 231px;
+  height: 81px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -530,8 +663,19 @@ header nav {
 .address-footer a {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.address-footer ul {
+  padding-left: 0px;
+}
+.address-footer li {
+  padding-left: 0px;
+}
+.social {
+  outline: 2px solid tomato;
+  width: 206px;
+  height: 80px;
+}
 .social b {
+  margin-bottom: 20px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -544,7 +688,7 @@ header nav {
 .social a {
   display: inline-block;
   padding: 1px 1px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-family: var(--font-family);
   background-color: var(--text-color);
   color: var(--light-color);
@@ -554,7 +698,24 @@ header nav {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
+.social ul {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  padding: 0px;
+}
+.social li {
+  padding: 0px;
+}
+.subscribe {
+  outline: 2px solid tomato;
+  width: 570px;
+  height: 86px;
+}
 .subscribe b {
+  width: 358px;
+  height: 50px;
+  margin-bottom: 20px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -565,6 +726,9 @@ header nav {
   color: var(--light-color);
 }
 .subscribe [type="text"] {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -577,7 +741,8 @@ header nav {
   color: var(--text-color);
 }
 .subscribe [type="submit"] {
-  display: inline-block;
+  display: flex;
+  margin: 0px;
   padding: 10px 62px 10px 29px;
   background-color: var(--accent-color);
   border: none;
@@ -595,6 +760,9 @@ header nav {
   color: var(--light-color);
 }
 .footer p {
+  outline: 2px solid tomato;
+  margin: 0px;
+  padding: 0px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
