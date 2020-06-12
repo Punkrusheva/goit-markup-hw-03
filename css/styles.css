@@ -53,7 +53,6 @@ a {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 /* HEDDER */
 .page-header .container {
@@ -61,14 +60,14 @@ a {
 }
 .page-header {
   display: flex;
-  background-color: lime;
+  align-items: center;
 }
 /* LOGO */
 .page-header .logo {
   position: absolute;
   width: 153px;
   height: 31px;
-  margin-left: 0px;
+  margin-left: 15px;
   padding-top: 24px;
 }
 .page-header .logo-blue {
@@ -90,24 +89,15 @@ a {
   letter-spacing: 0.03em;
   color: #000000;
 }
-/*
-.site-nav,
-.address-header {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  outline: 2px solid tomato;
-}*/
-.page-header .site-nav {
-  outline: 2px solid tomato;
-  position: absolute;
-  width: 294px;
-  height: 48px;
-  margin-left: 215px;
-  margin-top: 32px;
-  padding: 0px;
-}
+/* NAVIGATION HEADER*/
 .page-header .site-nav {
   display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-left: 253px;
+  margin-top: 32px;
+  padding: 0px;
+
   width: 294px;
   height: 48px;
   font-family: var(--font-family);
@@ -117,15 +107,11 @@ a {
   font-size: var(--text-font-size);
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+.site-nav .link {
   color: var(--title-color);
 }
-.site-nav li {
-  outline: 2px solid tomato;
-  margin-right: 50px;
-}
-.site-nav li:last-child {
-  margin-right: 0px;
-}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -133,11 +119,10 @@ a {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-
+/* ADDRESS HEADER */
 .address-header {
-  outline: 2px solid tomato;
   padding: 0px;
-  margin-left: 843px;
+  margin-left: auto;
   margin-top: 32px;
   width: 333px;
   height: 16px;
@@ -169,15 +154,13 @@ a {
 /* HERO */
 
 .hero .container {
-  outline: 2px solid tomato;
-  padding-top: 200px;
-  margin-bottom: 94px;
+  padding-top: 0px;
   text-align: center;
   width: 1230px;
-  height: 600px;
+  margin-bottom: 94px;
+  padding-bottom: 200px;
 }
 .hero h1 {
-  background-color: lime;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -197,10 +180,8 @@ a {
   color: var(--light-color);
 }
 .hero .box {
-  position: absolute;
   margin-top: 30px;
   margin-left: 500px;
-  margin-bottom: 294px;
   /*margin-top: 430px;*/
   padding: 10px 32px;
   background-color: var(--accent-color);
@@ -237,7 +218,6 @@ a {
 }
 
 .advantages li {
-  outline: 2px solid tomato;
   padding: 0px;
   margin-right: 30px;
   width: 270px;
@@ -285,7 +265,6 @@ a {
 }
 
 .directions .big-title {
-  outline: 2px solid tomato;
   margin-top: 0px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -333,24 +312,22 @@ a {
 .directions li:last-child {
   margin-right: 0px;
 }
-/* TEAM */
 
+/* TEAM */
 .team .container {
   margin-top: 0px;
   margin-bottom: 94px;
   padding-top: 94px;
   width: 1230px;
   height: 702px;
-  padding-left: 15px;
+  padding-left: 30px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 .team {
   background-color: var(--seckond-bg-color);
   margin-bottom: 94px;
 }
 .team h2 {
-  outline: 2px solid tomato;
   margin-top: 0px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -366,10 +343,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-/*
-.team .img {
-  padding: 0px;
-}*/
 .team h3 {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -422,7 +395,6 @@ a {
   display: flex;
   padding: 0px;
 }
-
 .team .team-list {
   width: 270px;
   height: 422px;
@@ -444,10 +416,8 @@ a {
   padding: 0px;
   width: 1200px;
   height: 182px;
-  outline: 2px solid tomato;
 }
 .customers h2 {
-  outline: 2px solid tomato;
   margin-top: 0px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -478,34 +448,34 @@ a {
 
 /* PORTFOLIO */
 .portfolio .container {
-  outline: 2px solid tomato;
   width: 1200px;
   height: 1360px;
   margin-top: 93px;
 }
 
-.portfolio-info,
-.portfolio-info ul {
-  padding-left: 0px;
-  width: 370px;
-  height: 404px;
-}
-
+/* PORTFOLIO SORTING */
 .portfolio-sorting {
   margin-left: auto;
   margin-right: auto;
-  width: 611px;
+  margin-bottom: 34px;
+  width: 612px;
   height: 54px;
-  outline: 2px solid tomato;
 }
 .portfolio-sorting ul {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 34px;
-  width: 611px;
-  height: 54px;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 34px;
+  height: 38px;
+}
+.portfolio-sorting li {
+  border: 1px transparent;
+  margin-right: 8px;
+  padding-left: 0px;
+}
+.portfolio-sorting li:last-child {
+  margin-right: 0px;
+  border-color: var(--accent-color);
 }
 .portfolio-sorting a {
   display: inline-block;
@@ -520,6 +490,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  background-color: var(--seckond-bg-color);
 }
 .portfolio-sorting a:hover,
 .portfolio-sorting a:focus {
@@ -529,33 +500,17 @@ a {
   color: var(--light-color);
 }
 
-.portfolio-sorting li {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px, 8px, 16px;
-}
-.portfolio-sorting li:first-child {
-  margin-right: auto;
-}
-.portfolio-sorting li:last-child {
-  margin-left: 8px;
-}
-
-.portfolio-info {
-  outline: 2px solid tomato;
-  margin-top: 34px;
-}
 .portfolio-info ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 .portfolio-info li {
-  margin-right: 30px;
-}
-.portfolio-infoli:last-child {
-  margin-right: 0px;
+  width: 370px;
+  height: 404px;
 }
 .portfolio-info h1 {
   margin-top: 0px;
@@ -574,7 +529,6 @@ a {
   /* or 156% */
   letter-spacing: 0.03em;
   color: var(--light-color);
-  background-color: lime;
 }
 .portfolio-info .title {
   margin-top: 0px;
@@ -603,12 +557,14 @@ a {
 
 /* FOOTER */
 .footer .container {
+  display: flex;
+  align-items: center;
   outline: 2px solid tomato;
   width: 1230px;
   height: 253px;
-  padding-left: 30px;
+  /*padding-left: 30px;
   padding-right: 15px;
-  padding-top: 45px;
+  padding-top: 45px;*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -616,16 +572,16 @@ a {
 .footer {
   background-color: var(--footer-bg-color);
 }
+
+/* LOGO FOOTER*/
+
 .logo-footer {
   outline: 2px solid tomato;
-  display: inline-block;
   width: 153px;
   height: 31px;
-  padding-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 8px; /*
-  margin-left: 14px;
-  margin-top: 1673px;*/
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 .logo-footer .logo-blue {
   font-family: var(--logo-font-family);
@@ -635,7 +591,7 @@ a {
   line-height: 26px;
   color: var(--accent-color);
 }
-.logo-footer .logo-black {
+.logo-footer .logo-white {
   font-family: var(--logo-font-family);
   font-style: normal;
   font-weight: bold;
@@ -648,7 +604,6 @@ a {
   outline: 2px solid tomato;
   margin-right: 0px;
   margin-top: 8px;
-  outline: 2px solid tomato;
   width: 231px;
   height: 81px;
   font-family: var(--font-family);
@@ -686,7 +641,7 @@ a {
   color: var(--light-color);
 }
 .social a {
-  display: inline-block;
+  display: flex;
   padding: 1px 1px;
   border-radius: 8px;
   font-family: var(--font-family);
@@ -760,6 +715,7 @@ a {
   color: var(--light-color);
 }
 .footer p {
+  display: inline-block;
   outline: 2px solid tomato;
   margin: 0px;
   padding: 0px;
