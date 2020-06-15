@@ -492,7 +492,6 @@ a {
 .footer .container {
   display: flex;
   align-items: baseline;
-  height: 193px;
   margin-bottom: 18px;
   padding-bottom: 28px;
 }
@@ -528,6 +527,7 @@ a {
 /* ADDRESS FOOTER */
 
 .address-footer {
+  margin: 0px;
   margin-right: 69px;
   font-family: var(--font-family);
   font-style: normal;
@@ -544,6 +544,7 @@ a {
 .address-footer ul,
 .address-footer li {
   padding-left: 0px;
+  margin: 0px;
 }
 .address-footer li {
   margin-bottom: 9px;
