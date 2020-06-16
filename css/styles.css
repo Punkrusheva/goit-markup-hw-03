@@ -279,10 +279,9 @@ a {
 .directions ul {
   display: flex;
   padding: 0px;
-  width: calc((100% - 30px * 2) / 3);
 }
 .directions li {
-  display: inline-block;
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
 }
 .directions li:last-child {
@@ -346,14 +345,17 @@ a {
 }
 .team ul {
   display: flex;
-  justify-content: space-between;
   padding: 0px;
   margin: 0px;
 }
 .team .team-list {
   width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
   background: #ffffff;
   padding-bottom: 24px;
+}
+.team .team-list:last-child {
+  margin-right: 0px;
 }
 .team .soc-cont {
   font-size: 15px;
@@ -373,8 +375,11 @@ a {
 .customers li {
   text-align: center;
   width: calc((100% - 30px * 4) / 5);
+  margin-right: 30px;
 }
-
+.customers li:last-child {
+  margin-right: 0px;
+}
 /* PORTFOLIO */
 
 /* PORTFOLIO SORTING */
@@ -425,15 +430,19 @@ a {
 .portfolio-info ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   padding: 0px;
   margin: 0px;
   margin-bottom: -30px;
 }
 .portfolio-info li {
   width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
   margin-bottom: 30px;
   padding-bottom: 20px;
+}
+.portfolio-info li:nth-child(3n) {
+  margin-right: 0px;
 }
 .portfolio-info h1 {
   margin-top: 0px;
