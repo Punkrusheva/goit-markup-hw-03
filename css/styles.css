@@ -502,16 +502,14 @@ a {
 }
 
 /* FOOTER */
+.footer {
+  background-color: var(--footer-bg-color);
+}
 .footer .container {
   display: flex;
   align-items: baseline;
-  margin-bottom: 18px;
-  padding-bottom: 28px;
-}
-.footer {
   padding-top: 45px;
-  padding-bottom: 21px;
-  background-color: var(--footer-bg-color);
+  padding-bottom: 28px;
 }
 .footer .card {
   flex-direction: column;
@@ -607,7 +605,6 @@ a {
 /* SUBSCRIBE */
 .subscribe {
   display: flex;
-
   flex-wrap: wrap;
   width: 570px;
 }
@@ -666,6 +663,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
