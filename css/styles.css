@@ -570,6 +570,7 @@ a {
   margin-right: 94px;
 }
 .social b {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: var(--font-family);
   font-style: normal;
@@ -591,10 +592,11 @@ a {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
-.social ul {
+.social-list {
   display: flex;
+  margin: 0px;
   width: 206px;
-  padding-left: 0px;
+  padding: 0px;
 }
 .social li {
   margin-right: 10px;
@@ -605,7 +607,7 @@ a {
 /* SUBSCRIBE */
 .subscribe {
   display: flex;
-  align-items: center;
+
   flex-wrap: wrap;
   width: 570px;
 }
