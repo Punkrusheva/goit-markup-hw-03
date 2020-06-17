@@ -209,7 +209,10 @@ a {
 }
 
 /* ADVANTAGES */
-
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .advantages ul {
   display: flex;
   margin: 0px;
@@ -252,7 +255,9 @@ a {
   color: var(--text-color);
 }
 /* DIRECTIONS */
-
+.directions {
+  padding-bottom: 94px;
+}
 .directions .big-title {
   width: 377px; /* в макете 376px*/
 }
@@ -276,6 +281,7 @@ a {
 .directions ul {
   display: flex;
   padding: 0px;
+  margin: 0px;
 }
 .directions li {
   width: calc((100% - 30px * 2) / 3);
@@ -359,6 +365,9 @@ a {
 }
 
 /* CUSTOMERS */
+.customers {
+  padding-bottom: 94px;
+}
 .customers .container {
   margin-bottom: 0px;
 }
@@ -368,6 +377,7 @@ a {
 .customers ul {
   display: flex;
   padding: 0px;
+  margin: 0px;
 }
 .customers li {
   text-align: center;
@@ -380,6 +390,10 @@ a {
 /* PORTFOLIO */
 
 /* PORTFOLIO SORTING */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-sorting {
   margin-left: auto;
   margin-right: auto;
@@ -427,7 +441,6 @@ a {
 .portfolio-info ul {
   display: flex;
   flex-wrap: wrap;
-
   padding: 0px;
   margin: 0px;
   margin-bottom: -30px;
