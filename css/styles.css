@@ -384,14 +384,11 @@ a {
   padding-bottom: 94px;
 }
 .portfolio-sorting {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
-  width: 612px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 .portfolio-sorting ul {
   display: flex;
+  justify-content: center;
   padding: 0px;
   margin: 0px;
 }
@@ -545,6 +542,7 @@ a {
 
 .address-footer {
   margin: 0px;
+  width: 231px;
   margin-right: 69px;
   font-family: var(--font-family);
   font-style: normal;
@@ -665,7 +663,6 @@ a {
 }
 
 .footer p {
-  width: 310px;
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
