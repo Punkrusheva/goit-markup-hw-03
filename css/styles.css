@@ -59,11 +59,7 @@ a {
 .big-title {
   margin-top: 0px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
   font-family: var(--font-family);
-  font-style: normal;
   font-weight: bold;
   font-size: var(--title-font-size);
   line-height: 42px;
@@ -122,9 +118,7 @@ a {
   padding-bottom: 28px;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
+.site-nav .link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
   border-bottom: 4px solid var(--accent-color);
@@ -236,8 +230,7 @@ a {
 }
 .advantages .title {
   margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -263,15 +256,11 @@ a {
 .directions {
   padding-bottom: 94px;
 }
-.directions .big-title {
-  width: 377px; /* в макете 376px*/
-}
 .directions .title {
-  width: 370px;
-  height: 70px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 27px;
+  padding-bottom: 27px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -299,13 +288,8 @@ a {
 /* TEAM */
 .team {
   background-color: var(--seckond-bg-color);
-}
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.team .big-title {
-  width: 265px; /*по  макету 264px*/
 }
 .team h3 {
   margin-top: 0px;
@@ -378,9 +362,6 @@ a {
 }
 .customers .container {
   margin-bottom: 0px;
-}
-.customers .big-title {
-  width: 391px; /*в макете 390px*/
 }
 .customers ul {
   display: flex;
@@ -591,6 +572,7 @@ a {
 /* SOCIAL */
 .social {
   margin-right: 94px;
+  width: 206px;
 }
 .social b {
   display: inline-block;
@@ -618,7 +600,6 @@ a {
 .social-list {
   display: flex;
   margin: 0px;
-  width: 206px;
   padding: 0px;
 }
 .social li {
